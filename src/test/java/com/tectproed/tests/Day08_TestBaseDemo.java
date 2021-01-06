@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestBaseDemo extends TestBase {
+public class Day08_TestBaseDemo extends TestBase {
     //When we run a test case then the flow is as following:
     //setUp()(IN TESTBASE) ====>>> test1() ===>>> tearDown() (IN TESTBASE)
 //    Create a class:TestBaseDemo
