@@ -11,7 +11,8 @@ import java.util.concurrent.TimeUnit;
 //We only want to use TestBase methods.
 //Don't want to create an object of TestBase
 public abstract class TestBase {
-    WebDriver driver;
+    protected WebDriver driver;//this can be reached from the child classes,
+    // this is not visible in the entire framework like public
     @BeforeMethod
     public void setUp(){
         WebDriverManager.chromedriver().setup();
