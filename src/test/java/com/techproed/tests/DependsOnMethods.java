@@ -1,4 +1,4 @@
-package com.tectproed.tests;
+package com.techproed.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

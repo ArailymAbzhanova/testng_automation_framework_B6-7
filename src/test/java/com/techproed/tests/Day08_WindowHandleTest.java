@@ -1,6 +1,6 @@
-package com.tectproed.tests;
+package com.techproed.tests;
 
-import com.tectproed.utilities.TestBase;
+import com.techproed.utilities.TestBase;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
