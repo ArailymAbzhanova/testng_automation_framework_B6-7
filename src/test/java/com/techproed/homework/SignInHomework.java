@@ -41,11 +41,12 @@ public class SignInHomework {
         signIn.click();
         //email send
         WebElement emailCreate = driver.findElement(By.xpath("//input[@name='email_create']"));
-        emailCreate.sendKeys(faker.name().firstName() + "@gmail.com");
+        String randomEmail=faker.name().firstName() + "@gmail.com";
+        System.out.println(randomEmail);
+        emailCreate.sendKeys(randomEmail);
         //submit
         WebElement submitCreate = driver.findElement(By.id("SubmitCreate"));
         submitCreate.click();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
         //verifying
         //create account
@@ -57,13 +58,11 @@ public class SignInHomework {
         //title
         WebElement verifyTextTitle = driver.findElement(By.xpath("//label[.='Title']"));
         Assert.assertTrue(verifyTextTitle.isDisplayed());
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
         //filling the fields
         //gender
         WebElement selectTitle = driver.findElement(By.id("uniform-id_gender1"));
         selectTitle.click();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
         //name
         WebElement firstName = driver.findElement(By.xpath("//input[@name='customer_firstname']"));
@@ -73,10 +72,12 @@ public class SignInHomework {
         lastName.sendKeys(faker.name().lastName());
         //password
         WebElement passwd = driver.findElement(By.xpath("//input[@name='passwd']"));
-        passwd.sendKeys(faker.lorem().characters(5,10));
+        String pass=faker.lorem().characters(5,10);
+        System.out.println(pass);
+        passwd.sendKeys(pass);
 //        randomize numbers
         Random random = new Random();
-        int randomDay= random.nextInt(30);
+        int randomDay = random.nextInt(30);
         int randomMonth = random.nextInt(11);
         int randomYear = random.nextInt(20);
 
@@ -94,7 +95,6 @@ public class SignInHomework {
         WebElement yearsDrop = driver.findElement(By.id("years"));
         Select yearOptions = new Select(yearsDrop);
         yearOptions.selectByIndex(randomYear);
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
 
         //SignUp news letter
