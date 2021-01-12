@@ -28,11 +28,12 @@ public class ConfigReader {
     //And return the value as String
     //We create this method to read the file
     public static String getProperty(String key){
-        return properties.getProperty(key);
+        String value=properties.getProperty(key);
+        return value;
     }
 
     //TEST IF LOGIC WORKS
-    public static void main(String[] args) {
-        System.out.println(properties.getProperty("url"));
-    }
+//    public static void main(String[] args) {
+//        System.out.println(properties.getProperty("qa_environment"));
+//    }
 }

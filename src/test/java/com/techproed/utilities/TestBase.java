@@ -20,8 +20,8 @@ public abstract class TestBase {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
     }
-//    @AfterMethod
-//    public void tearDown(){
-//        driver.close();
-//    }
+    @AfterMethod
+    public void tearDown(){
+        driver.close();
+    }
 }
