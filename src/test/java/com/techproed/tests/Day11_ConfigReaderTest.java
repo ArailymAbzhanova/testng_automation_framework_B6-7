@@ -14,7 +14,5 @@ public class Day11_ConfigReaderTest extends TestBase {
         //We can just call getPropery method using the class name
         //ConfigReader.getProperty("url")   --->>>>>>> https://www.google.com
         driver.get(ConfigReader.getProperty("qa_environment"));
-
-
     }
 }

@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class Driver {
 
     //Similar to TestBase, This is a utilities class
@@ -35,6 +37,16 @@ public class Driver {
                     break;
             }
         }
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
         return driver;
+    }//getDriver ends here
+
+    //create closeDriver method to close teh driver
+    public static void closeDriver(){
+        if (driver!=null) {//if driver is pointing anywhere
+            driver.quit();//quit when I call closeDriver
+            driver=null;//make the driver null so when we call getDriver, we can open the driver again
+        }
     }
 }
