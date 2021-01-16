@@ -10,6 +10,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class Day12_PositiveTest {
+    //HAPPY PATH : POSITIVE SCENARIO
+
     //We can improve this code
     //Create a method and write the code for pre conditions.
     WebElement username;
