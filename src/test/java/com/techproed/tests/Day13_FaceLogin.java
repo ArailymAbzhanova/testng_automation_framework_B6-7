@@ -5,6 +5,8 @@ import com.techproed.utilities.Driver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+//This is the test class
+//This class is used to write test cases
 public class Day13_FaceLogin {
     FaceLoginPage faceLoginPage;
     @Test

@@ -5,8 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+//This is the page class
+//This class is used to create page objects
 public class FaceLoginPage {
-
     //We will initialize the driver using a constructor
     public FaceLoginPage(){
         //PageFactory has initElements method. It is used to initialize the driver in page object model
