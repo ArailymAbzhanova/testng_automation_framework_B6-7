@@ -2,7 +2,7 @@ package com.techproed.tests;
 
 import org.testng.annotations.*;
 
-public class FirstTestNGClass {
+public class Day06_FirstTestNGClass {
 
     @BeforeMethod
     public void setUp(){

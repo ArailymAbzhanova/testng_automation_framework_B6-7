@@ -12,7 +12,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.util.concurrent.TimeUnit;
 
-public class SoftAssertTest {
+public class Day07_SoftAssertTest {
     //When user goes to google home page
     //And search for porcelain teapot
     //Then verify the page title includes teapot

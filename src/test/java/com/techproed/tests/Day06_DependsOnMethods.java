@@ -3,7 +3,7 @@ package com.techproed.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DependsOnMethods {
+public class Day06_DependsOnMethods {
     //login->homePage->search->results
     //homePage testcase depends on login
     @Test

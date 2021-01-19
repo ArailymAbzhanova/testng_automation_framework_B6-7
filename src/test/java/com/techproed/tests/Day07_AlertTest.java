@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class AlertTest {
+public class Day07_AlertTest {
 //    Go to https://the-internet.herokuapp.com/javascript_alerts
 //    Create a class: AlertTest
 //    Create setUp method
